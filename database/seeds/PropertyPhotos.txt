@@ -1,0 +1,82 @@
+// .............................................................................
+//
+// Model    : App\PropertyAttribute
+// Format   : [0] => property_guid
+//            [1] => url
+//            [2] => desc
+//            [4] => order
+//
+// .............................................................................
+
+--debug
+--dump_table
+
+# Property e0b4a073-aa89-47ac-aade-b3d8967fb071
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_4.jpg::0
+
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_1_4.jpg::1
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_2_4.jpg::2
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_3_4.jpg::3
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_4_4.jpg::4
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_5_4.jpg::5
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_6_4.jpg::6
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_7_4.jpg::7
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_8_4.jpg::8
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_9_4.jpg::9
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_10_4.jpg::10
+
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_11_4.jpg::11
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_12_4.jpg::12
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_13_4.jpg::13
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_14_4.jpg::14
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_15_4.jpg::15
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_16_4.jpg::16
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_17_4.jpg::17
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_18_4.jpg::18
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_19_4.jpg::19
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_20_4.jpg::20
+
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_21_4.jpg::21
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_22_4.jpg::22
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_23_4.jpg::23
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_24_4.jpg::24
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_25_4.jpg::25
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_26_4.jpg::26
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_27_4.jpg::27
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_28_4.jpg::28
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_29_4.jpg::29
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_30_4.jpg::30
+
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_31_4.jpg::31
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_32_4.jpg::32
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_33_4.jpg::33
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_34_4.jpg::34
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_35_4.jpg::35
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_36_4.jpg::36
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_37_4.jpg::37
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_38_4.jpg::38
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_39_4.jpg::39
+e0b4a073-aa89-47ac-aade-b3d8967fb071:ssl.cdn-redfin.com/photo/27/mbpaddedwide/328/genMid.21801328_40_4.jpg::40
+
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_0.jpg::0
+
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_1_0.jpg::1
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_2_0.jpg::2
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_3_0.jpg::3
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_4_0.jpg::4
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_5_0.jpg::5
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_6_0.jpg::6
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_7_0.jpg::7
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_8_0.jpg::8
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_9_0.jpg::9
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_10_0.jpg::10
+
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_11_0.jpg::11
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_12_0.jpg::12
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_13_0.jpg::13
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_14_0.jpg::14
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_15_0.jpg::15
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_16_0.jpg::16
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_17_0.jpg::17
+35fdf094-db54-40e4-99d3-4a9907185f94:.cdn-redfin.com/photo/27/mbpaddedwide/633/genMid.21801633_18_0.jpg::18
+

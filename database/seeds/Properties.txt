@@ -1,0 +1,26 @@
+// .............................................................................
+//
+// Model    : App\Property
+// Format   :  [0] => guid
+//             [1] => location_desc
+//             [2] => country_code
+//             [3] => region
+//             [4] => city
+//             [5] => address
+//             [6] => zip
+//             [7] => built_area
+//             [8] => land_area
+//             [9] => area_unit
+//            [10] => rooms
+//            [11] => bed_rooms
+//            [12] => bath_rooms
+//            [13] => desc_short
+//            [14] => desc_full
+// .............................................................................
+
+--debug
+--dump_table
+
+e0b4a073-aa89-47ac-aade-b3d8967fb071:Beautiful Sausalito House:US:California:Sausalito:171 Cazneau Ave:94965:3494:6560:sqft:8:3:2.5:Stunning contemporary residence with sweeping San Francisco Bay & Sausalito marina views in desirable location just minutes to the San Francisco.:Stunning contemporary residence with sweeping San Francisco Bay & Sausalito marina views in desirable location just minutes to the San Francisco. Great room with fireplace & wet bar. Granite chef's kitchen, stainless appliances & center island. Fabulous Master Suite with fireplace, opening skylight & 2 walk-in closets. Media loft with surround sound. Office, elevator & more. Breathtaking views from every room! Take a 3D tour-click on Visual Tour
+
+35fdf094-db54-40e4-99d3-4a9907185f94:Beautiful Sausalito House:US:California:Sausalito:63 Bulkley Ave:94965:4137:5001:sqft:8:3:3.5:Fabulous multi-level contemporary home, built in 1993 with gorgeous panoramic views!:Fabulous multi-level contemporary home, built in 1993 with gorgeous panoramic views! Prime Banana Belt location! Tastefully appointed finishes boasting both sophistication and charm! Immaculate! Convenient in-home elevator. Two car garage. Wine room/storage. Short distance to Bridgeway Village, GGB and SF!
