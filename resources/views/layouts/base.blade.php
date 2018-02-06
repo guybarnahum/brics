@@ -37,6 +37,16 @@
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+        <style>
+            .slider-size {
+                height:400px; /* This is your slider height */
+                width:100%;
+            }
+            .carousel {
+                width:100%;
+                margin:0 auto; /* center your carousel if other than 100% */
+            }
+        </style>
     </head>
     <body>
         <div id="content" role="main">

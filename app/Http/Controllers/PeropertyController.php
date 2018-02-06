@@ -20,6 +20,11 @@ class PropertyController extends Controller {
 	public function index()
 	{
         $properties = \App\Models\Property::all();
+        
+        foreach( $properties as $property ){
+            $photos = \App\Models\PropertyPhoto::where('property_guid', '=', $property->guid)->get();
+            $property[ 'photos' ] = $photos;
+        }
         return view( 'properties' )->with( 'properties', $properties );
 	}
 }

@@ -11,15 +11,15 @@
             @if (!isset($properties))
             No Properties found
             @else
-            <!--
-                {{ print_r( $properties ) }}
-            -->
+            {{--
+                <!--
+                    {{ print_r( $properties ) }}
+                -->
+            --}}
             <div class="portfolio isotope no-transition portfolio-round row">
 
                 @forelse ($properties as $property)
-
                     @include('property',[ 'property' => $property ] )
-
                 @empty
                     No Properties found
                 @endforelse
