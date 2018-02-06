@@ -13,3 +13,19 @@
 --dump_table
 
 e0b4a073-aa89-47ac-aade-b3d8967fb071:View:Moutains, Ocean, City:View:0
+
+fc942c49-2aa8-42a0-9718-846179f43e79:Air Conditioning:1:Facilities:0
+fc942c49-2aa8-42a0-9718-846179f43e79:Parking:1:Facilities:0
+fc942c49-2aa8-42a0-9718-846179f43e79:WiFi:1:Facilities:0
+fc942c49-2aa8-42a0-9718-846179f43e79:CCTV:1:Security:0
+fc942c49-2aa8-42a0-9718-846179f43e79:Security:1:Security:0
+fc942c49-2aa8-42a0-9718-846179f43e79:Garden:1:Facilities:0
+fc942c49-2aa8-42a0-9718-846179f43e79:Swimming Pool:1:Facilities:0
+
+bde2bcd6-234f-4418-9642-c445e734f037:Air Conditioning:1:Facilities:0
+bde2bcd6-234f-4418-9642-c445e734f037:Parking:1:Facilities:0
+bde2bcd6-234f-4418-9642-c445e734f037:WiFi:1:Facilities:0
+bde2bcd6-234f-4418-9642-c445e734f037:CCTV:1:Security:0
+bde2bcd6-234f-4418-9642-c445e734f037:Security:1:Security:0
+bde2bcd6-234f-4418-9642-c445e734f037:Garden:1:Facilities:0
+bde2bcd6-234f-4418-9642-c445e734f037:Swimming Pool:1:Facilities:0
