@@ -17,7 +17,7 @@
 
     @if (isset($property->photos))
 
-    <div id="carousel-{{$property->guid}}" class="carousel slide" data-keyboard=true>
+    <div id="carousel-{{$property->guid}}" class="carousel slide" data-interval="false" data-keyboard=true>
       <ol class="carousel-indicators">
         @foreach ($property->photos as $photo)
             @if ($loop->index == 0 )
