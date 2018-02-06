@@ -12,7 +12,14 @@ After 10 years the property is sold and investors split the proceeds of the shar
 The shares are implemented on a etherium-like blockchain 'Brics', which would allow the purchaser to sell their 
 shares and the dividends rights to the company or to 3rd parties at any time and in full anonimity.
 
-# Installation
+# github installation 
 
-Install Laravel 5.6 with PHP > 7.1
+Install php7.1, mysql 5.7, composer
+Run 'composer install' on your cmd or terminal
+Copy .env.example file to .env on root folder. 
+Open your .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your configuration. 
+Run php artisan key:generate
+Run php artisan migrate
+Run php artisan serve
+Go to localhost:8000
 
