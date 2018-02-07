@@ -1,0 +1,36 @@
+// .............................................................................
+//
+// Model    : App\BricsIco
+// Format   : [0] => guid
+//            [1] => desc
+//            [2] => purpose
+//            [4] => status
+//
+//            [5] => property_guid
+//            [6] => property_valuation
+//            [7] => property_valuation_currency
+//            [8] => property_valuation_date
+//
+//            [9] => ico_total_value
+//            [10] => brics_allocated
+//            [11]=> brics_circulated
+//
+// .............................................................................
+
+--debug
+--dump_table
+
+# Brics Ico for Property e0b4a073-aa89-47ac-aade-b3d8967fb071
+b6a14fd8-d035-4076-8cbc-5d9b5dddcf3e:Initial funding ICO:Purchase of property:closed:e0b4a073-aa89-47ac-aade-b3d8967fb071:2500000:usd:2017-05-06:2500000:100000:100000
+
+# Brics Ico for Property e0b4a073-aa89-47ac-aade-b3d8967fb071
+ca5acf6a-241b-4e0f-8234-9655a2670bdb:Round A ICO:Renovation of Kitchen and Baths:active:e0b4a073-aa89-47ac-aade-b3d8967fb071:2800000:usd:2018-1-15:50000:5000:3000
+
+# Brics Ico for Property 35fdf094-db54-40e4-99d3-4a9907185f94
+92c6824a-3684-4401-849c-c36832dd1d8e:Initial funding ICO:Purchase of property:closed:35fdf094-db54-40e4-99d3-4a9907185f94:1250000:usd:2017-12-8:1250000:100000:100000
+
+# Brics Ico for Property fc942c49-2aa8-42a0-9718-846179f43e79
+f8c07fa6-1bee-4560-96f0-bfe5b1517436:Initial funding ICO:Purchase of property:active:fc942c49-2aa8-42a0-9718-846179f43e79:530000:usd:2018-1-23:530000:100000:40000
+
+# Brics Ico for Property bde2bcd6-234f-4418-9642-c445e734f037
+3dc5d44d-dc52-4cc4-a667-637b2c81f17b:Initial funding ICO:Purchase of property:closed:bde2bcd6-234f-4418-9642-c445e734f037:200000:usd:2018-2-5:2500000:100000:10000

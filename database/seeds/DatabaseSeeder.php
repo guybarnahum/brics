@@ -29,6 +29,14 @@ class DatabaseSeeder extends Seeder
         $s->withFile( 'database/seeds/PropertyPhotos.txt')
           ->withModel('\App\Models\PropertyPhoto' )
           ->run();
+
+        $s->withFile( 'database/seeds/BricsIcos.txt')
+          ->withModel('\App\Models\BricsIco' )
+          ->run();
+
+        $s->withFile( 'database/seeds/BricsWallets.txt')
+          ->withModel('\App\Models\BricsWallet' )
+          ->run();
     }
     
     public function call($class, $extra = null)

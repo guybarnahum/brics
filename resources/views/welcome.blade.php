@@ -84,7 +84,7 @@
 
                 <div class="links">
                     <a href="/properties">Properties</a>
-                    <a href="https://github.com/brics">GitHub</a>
+                    <a href="https://github.com/guybarnahum/brics">GitHub</a>
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@ class CreateBricsTable extends Migration
      */
     public function up()
     {
-        Schema::create('brics_ico', function (Blueprint $table) {
+        Schema::create('brics_icos', function (Blueprint $table) {
                        
                        $table->increments('id');
                        $table->string( 'guid' )->unique();
@@ -27,6 +27,7 @@ class CreateBricsTable extends Migration
                        
                        // valuation of property as cost basis
                        $table->integer( 'property_valuation' )->unsigned();
+                       $table->string ( 'property_valuation_currency' )->default( 'usd' );
                        $table->date   ( 'property_valuation_date' );
                        
                        // number of brics allocated and circulated
@@ -37,7 +38,7 @@ class CreateBricsTable extends Migration
                        $table->timestamps();
                        });
         
-        Schema::create('brics_wallet', function (Blueprint $table) {
+        Schema::create('brics_wallets', function (Blueprint $table) {
                        
                        $table->increments('id');
                        $table->string( 'guid' )->unique();
@@ -64,7 +65,7 @@ class CreateBricsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('brics_wallet');
-        Schema::dropIfExists('brics_ico');
+        Schema::dropIfExists('brics_wallets');
+        Schema::dropIfExists('brics_icos');
     }
 }
