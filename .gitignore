@@ -13,3 +13,5 @@ yarn-error.log
 /brics.xcodeproj
 
 .DS_Store
+
+database/.DS_Store

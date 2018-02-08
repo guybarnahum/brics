@@ -15,7 +15,8 @@ class DatabaseSeeder extends Seeder
         //$this->call(PropertiesTableSeeder::class, 10);
         //$this->call(PropertyPhotosTableSeeder::class, 200);
         //$this->call(PropertyAttributesTableSeeder::class, 200);
-        
+        $this->call(BricsWalletsTableSeeder::class, 10);
+/*
         $s = new ParserSeeder();
         
         $s->withFile ('database/seeds/Properties.txt')
@@ -37,6 +38,7 @@ class DatabaseSeeder extends Seeder
         $s->withFile( 'database/seeds/BricsWallets.txt')
           ->withModel('\App\Models\BricsWallet' )
           ->run();
+*/
     }
     
     public function call($class, $extra = null)
