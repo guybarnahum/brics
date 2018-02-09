@@ -1,4 +1,4 @@
-@extends('layouts.base' )
+@extends('layouts.app' )
 
 @section('header')
 @endsection

@@ -12,6 +12,5 @@ yarn-error.log
 .env
 /brics.xcodeproj
 
-.DS_Store
+**/.DS_Store
 
-database/.DS_Store
