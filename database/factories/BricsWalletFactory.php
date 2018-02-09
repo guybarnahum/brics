@@ -15,7 +15,7 @@ use Faker\Generator as Faker;
 
 $factory->define(\App\Models\BricsWallet::class, function (Faker $faker) {
     
-    $user   = App\User::inRandomOrder()->first();
+    $user   = App\Models\User::inRandomOrder()->first();
     $guid   = $user->guid;
 
     // pick an active ico

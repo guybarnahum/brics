@@ -9,7 +9,7 @@
 //
 // .............................................................................
 
---debug
+// --debug
 --dump_table
 
 e0b4a073-aa89-47ac-aade-b3d8967fb071:View:Moutains, Ocean, City:View:0
