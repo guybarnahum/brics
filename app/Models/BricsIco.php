@@ -14,6 +14,7 @@ class BricsIco extends Model
     protected $fillable = [
     
         'guid'      ,
+        'test'      ,
         'desc'      ,
         'purpose'   ,
 

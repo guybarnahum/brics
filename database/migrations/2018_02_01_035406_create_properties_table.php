@@ -29,7 +29,7 @@ class CreatePropertiesTable extends Migration
             // size of property
             $table->decimal('built_area',6,2) ; // XXXX.YY
             $table->decimal('land_area' ,6,2) ; 
-            $table->enum('area_unit',['sqft','sqm'] ) ;
+            $table->enum   ('area_unit',['sqft','sqm'] ) ;
             
             // rooms
             $table->decimal('rooms'     ,6,2) ; // XXXX.YY
@@ -48,9 +48,9 @@ class CreatePropertiesTable extends Migration
                     
             $table->string('property_guid')->index();
                       
-            $table->text('url');
-            $table->text('desc')->nullable();
-            $table->integer('order')->unsigned();
+            $table->text   ( 'url'  );
+            $table->text   ( 'desc' )->nullable();
+            $table->integer( 'order')->unsigned();
                       
             $table->timestamps();
         });
@@ -60,11 +60,11 @@ class CreatePropertiesTable extends Migration
                       
             $table->string('property_guid')->index();
                       
-            $table->string('name');
-            $table->string('value');
+            $table->string( 'name'  );
+            $table->string( 'value' );
                       
-            $table->string('group')->index();
-            $table->integer('order')->unsigned();
+            $table->string( 'group' )->index();
+            $table->integer('order' )->unsigned();
                       
             $table->timestamps();
         });

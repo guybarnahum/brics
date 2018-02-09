@@ -16,7 +16,8 @@ class CreateBricsTable extends Migration
         Schema::create('brics_icos', function (Blueprint $table) {
                        
             $table->increments('id');
-            $table->string( 'guid' )->unique();
+            $table->string ( 'guid' )->unique();
+            $table->boolean( 'test' )->default(false);
 
             // shares offering info
             $table->string ( 'desc' );

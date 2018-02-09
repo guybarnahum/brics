@@ -11,12 +11,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //$this->call(UsersTableSeeder::class, 30);
+        // users are first
+        $this->call(UsersTableSeeder::class, 30);
         //$this->call(PropertiesTableSeeder::class, 10);
         //$this->call(PropertyPhotosTableSeeder::class, 200);
         //$this->call(PropertyAttributesTableSeeder::class, 200);
-        $this->call(BricsWalletsTableSeeder::class, 10);
-/*
+
         $s = new ParserSeeder();
         
         $s->withFile ('database/seeds/Properties.txt')
@@ -34,11 +34,14 @@ class DatabaseSeeder extends Seeder
         $s->withFile( 'database/seeds/BricsIcos.txt')
           ->withModel('\App\Models\BricsIco' )
           ->run();
-
+/*
         $s->withFile( 'database/seeds/BricsWallets.txt')
           ->withModel('\App\Models\BricsWallet' )
           ->run();
 */
+        // wallets are last
+        $this->call(BricsWalletsTableSeeder::class, 10);
+
     }
     
     public function call($class, $extra = null)

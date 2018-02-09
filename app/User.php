@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'guid', 'name', 'test', 'admin', 'email', 'password',
     ];
 
     /**
@@ -26,4 +26,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    /**
+     * Guid is calculated if not provided
+     *
+     * @var array
+     */
+
+    public function setGuidAttribute($value)
+    {
+        $this->attributes['guid'] = empty($value)? generate_guid():$value;
+    }
 }
