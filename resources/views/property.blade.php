@@ -34,10 +34,13 @@
             @else
         <div class="carousel-item">
             @endif
-            <div style='background:url("https://{{$photo->url}}") center center; background-size:cover;' class="slider-size">
+
+            <div style='background:url("{{$photo->url}}") center center; background-size:cover;' class="slider-size">
+
 {{--
-<img class="d-block img-fluid" src="https://{{$photo->url}}" alt="{{$photo->desc}}">
+            <img class="d-block img-fluid" src="{{$photo->url}}" alt="{{$photo->desc}}">
 --}}
+
             </div>
         </div>
         @endforeach

@@ -15,10 +15,10 @@ use Faker\Generator as Faker;
 
 $factory->define(\App\Models\PropertyPhoto::class, function (Faker $faker) {
     
-    $property  = \App\Property::inRandomOrder()->first();
+    $property  = \App\Models\Property::inRandomOrder()->first();
     $guid      = $property->guid;
-    $photo_num = \App\PropertyPhoto::where('property_guid', $guid)->count();
-                 
+    $photo_num = \App\Models\PropertyPhoto::where('property_guid', $guid)->count();
+    
     return [
         'property_guid' => $guid,
 

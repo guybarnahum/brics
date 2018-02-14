@@ -194,7 +194,7 @@ class ParserSeeder extends Seeder{
         if ($ok){
             foreach( $parts as $ix => $part ){
                 $name = $this->fmt[ $ix ];
-                $res[ $name ] = trim( $part );
+                $res[ $name ] = trim( urldecode ( $part ) );
             }
         }
         

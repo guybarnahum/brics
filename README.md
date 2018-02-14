@@ -23,6 +23,14 @@ Run php artisan migrate
 Run php artisan serve
 Go to localhost:8000
 
+# Upgrading laravel 5.6 to boost 4.0
+
+Make sure yarn and node are installed
+
+>composer require laravelnews/laravel-twbs4
+>php artisan preset bootstrap4-auth
+>yarn && yarn dev
+
 # [5.4-5.6] SQL error when migrating tables
 
 laravel 5.6 Syntax error or access violation: 1071 Specified key was too long; max key leng th is 767 bytes (SQL: alter table `users` add unique `users_email_unique`
