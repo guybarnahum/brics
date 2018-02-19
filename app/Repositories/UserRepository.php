@@ -8,5 +8,13 @@ use App\Models\BricsIco;
 use App\Models\BricsWallet;
 
 class UserRepository {
-    
+
+    public function getUserByGuid( $guid, $where = false )
+    {
+        if ( empty( $where ) ) $where = [];
+        if (!empty( $guid  ) ) $where[ 'guid' ] = $guid;
+
+        $user  = User::where( $where )->first();
+        return $user;
+    }
 }
