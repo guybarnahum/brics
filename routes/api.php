@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use 
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -26,10 +26,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // filter : user | accounts | facts filter by provider
 //
 
-Route::post('get/{what}/{uid?}', 'ApiController@get'       );
-Route::post('get/{what}'       , 'ApiController@getActive' );
+Route::post('get/{what}/{guid?}', 'ApiController@get'       );
+Route::post('get/{what}'        , 'ApiController@getActive' );
 
-if ( false ){ // Enable GET for debugging only..
-    Route::get('get/{what}/{uid?}', 'ApiController@get'      );
-    Route::get('get/{what}'       , 'ApiController@getActive');
+if ( true ){ // Enable GET for debugging only..
+    Route::get('get/{what}/{guid?}', 'ApiController@get'      );
+    Route::get('get/{what}'        , 'ApiController@getActive');
 }
