@@ -6,7 +6,8 @@ use App\Models\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-
+use Illuminate\Database\QueryException;
+    
 class RegisterController extends Controller
 {
     /*
@@ -62,11 +63,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'guid' => 0,
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+        try{
+        $res = User::create([   'guid' => 0,
+                                'name' => $data['name'],
+                                'email' => $data['email'],
+                                'password' => bcrypt($data['password']),
+                            ]);
+        }
+        catch( QueryException $e ){
+            $res = [ 'error' => $e->message ];
+        }
+        
+        return $res;
     }
 }

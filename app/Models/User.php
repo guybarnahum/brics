@@ -5,7 +5,9 @@ namespace App\Models;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+use Tymon\JWTAuth\Contracts\JWTSubject;
+
+class User extends Authenticatable implements JWTSubject
 {
     use Notifiable;
 
@@ -36,5 +38,21 @@ class User extends Authenticatable
     public function setGuidAttribute($value)
     {
         $this->attributes['guid'] = empty($value)? generate_guid():$value;
+    }
+    
+    /**
+     * @return mixed
+     */
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+    
+    /**
+     * @return array
+     */
+    public function getJWTCustomClaims()
+    {
+        return ['user' => ['id' => $this->id]];
     }
 }

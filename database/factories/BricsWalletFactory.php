@@ -15,13 +15,13 @@ use Faker\Generator as Faker;
 
 $factory->define(\App\Models\BricsWallet::class, function (Faker $faker) {
     
-    $user   = App\Models\User::inRandomOrder()->first();
-    $guid   = $user->guid;
+    $user = App\Models\User::inRandomOrder()->first();
+    $user_guid = $user->guid;
 
     // pick an active ico
-    $ico    = App\Models\BricsIco::inRandomOrder()
-                 ->where('status','=','active')
-                 ->first();
+    $ico = App\Models\BricsIco::inRandomOrder()
+            ->where('status','=','active')
+            ->first();
 
     if (empty($ico)) return null;
 
@@ -47,7 +47,7 @@ $factory->define(\App\Models\BricsWallet::class, function (Faker $faker) {
 
     return [
         'guid'          => 0,
-        'user_guid'     => $user ,
+        'user_guid'     => $user_guid,
         'ico_guid'      => $ico_guid,
 
         'brics'         => $brics,

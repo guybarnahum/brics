@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,19 +17,22 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::middleware('api')->get('/hello', function () {
+    return json_encode(['message' => 'hello']);
+});
+    
+Route::group(['middleware' => ['api','cors']], function () {
+    Route::post('auth/register', 'Auth\ApiRegisterController@create');
+    Route::post('auth/login'   , 'Auth\ApiAuthController@login'     );
+             
+    Route::get ('auth/register', 'Auth\ApiRegisterController@create');
+    Route::get ('auth/login'   , 'Auth\ApiAuthController@login'     );
+             
+});
+    
+Route::group(['middleware' => [ 'api', 'cors', 'jwt.auth' ]], function () {
 
-// ........................................................................ ajax
-// POST ajax api calls
-//
-// what   : user | property | icos | wallets
-// uid    : me is session active user
-// filter : user | accounts | facts filter by provider
-//
-
-Route::post('get/{what}/{guid?}', 'ApiController@get'       );
-Route::post('get/{what}'        , 'ApiController@getActive' );
-
-if ( true ){ // Enable GET for debugging only..
-    Route::get('get/{what}/{guid?}', 'ApiController@get'      );
-    Route::get('get/{what}'        , 'ApiController@getActive');
-}
+    // what   : user | property | icos | wallet
+    Route::post('get/{what}', 'ApiController@get' );
+    Route::get ('get/{what}', 'ApiController@get' );
+});

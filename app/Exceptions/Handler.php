@@ -3,8 +3,17 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Auth\AuthenticationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
+    
+use Tymon\JWTAuth\Exceptions\TokenExpiredException;
+use Tymon\JWTAuth\Exceptions\TokenInvalidException;
+use Tymon\JWTAuth\Exceptions\TokenBlacklistedException;
+    
 class Handler extends ExceptionHandler
 {
     /**
@@ -14,6 +23,12 @@ class Handler extends ExceptionHandler
      */
     protected $dontReport = [
         //
+        //\Illuminate\Auth\AuthenticationException::class,
+        //\Illuminate\Auth\Access\AuthorizationException::class,
+        //\Symfony\Component\HttpKernel\Exception\HttpException::class,
+        //\Illuminate\Database\Eloquent\ModelNotFoundException::class,
+        //\Illuminate\Session\TokenMismatchException::class,
+        //\Illuminate\Validation\ValidationException::class,
     ];
 
     /**
@@ -46,8 +61,61 @@ class Handler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $exception)
+    public function render( $request, Exception $e )
     {
+        if ( $request->expectsJson() ){
+            
+            if ( $e instanceof ModelNotFoundException )
+                return response()->json([
+                                        'message' => 'Record not found',
+                                        ], 404);
+            else
+            if ($e instanceof NotFoundHttpException )
+                return response()->json([
+                                        'message' => 'Resource not found',
+                                        ], 404);
+            else
+            if ( $e instanceof UnauthorizedHttpException )
+                return response()->json([
+                                        'message' => $e->getMessage()
+                                        ], $e->getStatusCode());
+            else
+            if ( $e instanceof TokenExpiredException )
+                return response()->json([
+                                        'message' =>'token expired'
+                                        ], $e->getStatusCode());
+            else
+            if ( $e instanceof TokenInvalidException )
+                return response()->json([
+                                        'message' => 'token invalid'
+                                        ], $e->getStatusCode());
+            else
+            if ( $e instanceof TokenBlacklistedException )
+                return response()->json([
+                                        'message' => 'token invalid'
+                                        ], $e->getStatusCode());
+            else
+                return response()->json([
+                                        'message' => $e->getMessage()
+                                        ], 400);
+        }
+        
         return parent::render($request, $exception);
+    }
+                                        
+    /**
+     * Convert an authentication exception into an unauthenticated response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Auth\AuthenticationException  $exception
+     * @return \Illuminate\Http\Response
+     */
+    protected function unauthenticated($request, AuthenticationException $exception)
+    {
+        if ($request->expectsJson()) {
+            return response()->json(['error' => 'Unauthenticated.'], 401);
+        }
+    
+        return redirect()->guest(route('login'));
     }
 }
