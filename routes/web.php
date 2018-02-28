@@ -12,9 +12,6 @@
 */
 Auth::routes();
 
-Route::get('/'          , 'WelcomeController@index');
-Route::get('/properties', 'PropertyController@index' );
-
-Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/'    , 'WelcomeController@index');
+Route::get('/home', 'WelcomeController@index');
 

@@ -44,20 +44,20 @@ class ApiController extends Controller
         $res = [];
         
         $where = $request->all();
-        $user = JWTAuth::parseToken()->authenticate();
-        $user_guid = isset($user->guid)? $user->guid: false;
+        $user  = JWTAuth::parseToken()->authenticate();
+        $guid  = isset($user->guid)? $user->guid: false;
         
         switch( $what ){
-            case 'user'     : $res = $this->getUser    ( $where, $user_guid ); break;
-            case 'property' : $res = $this->getProperty( $where, $user_guid ); break;
-            case 'wallet'   : $res = $this->getWallet  ( $where, $user_guid ); break;
+        case 'user'     : $res = $this->getUser    ( $where, $guid ); break;
+        case 'property' : $res = $this->getProperty( $where, $guid ); break;
+        case 'wallet'   : $res = $this->getWallet  ( $where, $guid ); break;
 
-            default         : $res['status'] = 'error';
-                              $res['msg'   ] = 'invalid get request ('.$what.')';
-                              break;
+        default         : $res['response'] = 'error';
+                          $res['message' ] = 'invalid get request ('.$what.')';
+                          break;
         }
 
-        if ( !isset($res['status']) ){ $res['status'] = 'ok'; }
+        if ( !isset($res['response']) ){ $res['response'] = 'success'; }
         
         $json = json_encode( $res );
         return $json;

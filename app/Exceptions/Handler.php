@@ -99,8 +99,8 @@ class Handler extends ExceptionHandler
                                         'message' => $e->getMessage()
                                         ], 400);
         }
-        
-        return parent::render($request, $exception);
+
+        return parent::render( $request, $e );
     }
                                         
     /**

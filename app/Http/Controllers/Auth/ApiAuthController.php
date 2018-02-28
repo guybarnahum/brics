@@ -11,7 +11,6 @@ use App\Models\User;
 
 class ApiAuthController extends Controller
 {
-    
     public function __construct()
     {
         $this->user = new User;
@@ -24,18 +23,21 @@ class ApiAuthController extends Controller
         $jwt = '';
         
         try {
+        
             if (!$jwt = JWTAuth::attempt($credentials)) {
                 return response()->json([
                                         'response' => 'error',
-                                        'message' => 'invalid_credentials',
+                                        'message' => 'invalid credentials',
                                         ], 401);
             }
-        } catch (JWTAuthException $e) {
+        }
+        catch (JWTAuthException $e) {
             return response()->json([
                                     'response' => 'error',
-                                    'message' => 'failed_to_create_token',
+                                    'message' => 'failed to create token',
                                     ], 500);
         }
+        
         return response()->json([
                                 'response' => 'success',
                                 'result' => ['token' => $jwt]

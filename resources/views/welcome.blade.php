@@ -69,21 +69,26 @@
         @if (Route::has('login'))
             <div class="top-right links">
                 @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                        @endauth
+                    <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                    <form id="logout-form"
+                        action="{{ route('logout') }}" method="POST"
+                        style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                @else
+                    <a href="{{ route('login'   ) }}">Login</a>
+                    <a href="{{ route('register') }}">Register</a>
+                @endauth
             </div>
         @endif
 
         <div class="content">
             <div class="title m-b-md">
-                Laravel
+                {{ config('app.name') }}
             </div>
 
             <div class="links">
-                <a href="{{ url( '/properties') }}">Properties</a>
                 <a href="https://github.com/laravel/laravel">GitHub</a>
             </div>
         </div>
